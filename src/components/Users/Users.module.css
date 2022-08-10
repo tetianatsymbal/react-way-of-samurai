@@ -1,0 +1,38 @@
+.usersBlock{
+ width: 100%;
+}
+.users{
+ width: 100%;
+ margin: 25px auto;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.userPhoto {
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+}
+.pages{
+ width: 50%;
+ margin: 0 auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.pages span {
+ display: block;
+ margin: 0 5px;
+ cursor: pointer;
+}
+.pageNumber{
+ margin: 0 10px;
+}
+.selectedPage {
+ font-weight: bold;
+ font-size: 20px;
+}

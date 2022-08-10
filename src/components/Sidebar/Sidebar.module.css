@@ -1,0 +1,24 @@
+.sidebar {
+  background-color: burlywood;
+  padding: 20px 15px;
+}
+.friends {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.friends a {
+  display: block;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.friendImg{
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.friend {
+}

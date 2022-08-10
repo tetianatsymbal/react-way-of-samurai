@@ -1,0 +1,66 @@
+.dialogs {
+   display: grid;
+   grid-template-areas:
+   "d m"
+   "d send";
+   grid-template-rows: 10fr 2fr;
+   grid-template-columns: 2.5fr 9.5fr;
+     /* grid-gap: 10px; */
+}
+.dialogItems {
+   grid-area: d;
+   padding: 5px;
+   border-right: 2px solid rgb(243 235 158);
+   transition: all 300ms ease;
+}
+.dialogItems:hover{
+   box-shadow: 2px 2px 15px 3px rgba(10,10,10,0.69);
+   z-index: 2;
+
+}
+.dialogItems a {
+   text-decoration: none;
+   color: black;
+   
+}
+.dialog {
+   margin: 20px;
+}
+
+.messages {
+   grid-area: m;
+   padding: 20px;
+   background-color: ghostwhite;
+}
+.messages .message{
+   background-color: rgba(170, 220, 170, 0.495);
+   margin: 10px;
+   border-radius: 15px;
+   padding: 13px;
+}
+.sendingBlock {
+   grid-area: send;
+   background-color: ghostwhite;
+   display: flex;
+   flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+   padding: 20px;
+}
+.textarea {
+   border-radius: 10px;
+}
+.sendMessageBtn {
+   width: 35px;
+   margin-left: 25px;
+   height: 35px;
+   border-radius: 50%;
+   background-color: green;
+   border: none;
+   color: white;
+   font-size: 22px;
+   padding-bottom: 7px;
+   font-weight: 900;
+   cursor: pointer;
+   transition: all 300ms ease;
+}

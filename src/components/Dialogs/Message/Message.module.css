@@ -1,0 +1,10 @@
+.messages {
+   padding: 20px;
+   background-color: ghostwhite;
+}
+.message{
+   background-color: rgba(170, 220, 170, 0.495);
+   margin: 10px;
+   border-radius: 15px;
+   padding: 13px;
+}

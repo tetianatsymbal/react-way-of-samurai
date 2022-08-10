@@ -1,0 +1,18 @@
+.profileInfo {
+   background-color: rgba(255, 255, 255, 0.735);
+}
+.wallpaper {
+   width: 100%;
+}
+.descriptionBlock {
+   padding: 20px;
+}
+.descriptionBlock img {
+   width: 65px;
+   height: 65px;
+   border-radius: 50%;
+}
+.userName {
+   font-size: 30px;
+   font-weight: bold;
+}

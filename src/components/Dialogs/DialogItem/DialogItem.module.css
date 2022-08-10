@@ -1,0 +1,15 @@
+
+.dialog {
+   margin: 10px 20px;
+}
+.dialog img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   margin-right: 10px;
+}
+a.active {
+   color: goldenrod;
+   font-weight: bold;
+   font-size: 22px;
+}

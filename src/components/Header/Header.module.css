@@ -1,0 +1,36 @@
+.header {
+  grid-area: h;
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  width: 50px;
+  margin: 0 20px;
+}
+.socialName{
+  color: #541256;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.loginBlock {
+  align-items: center;
+  margin-right: 45px;
+  color: blanchedalmond;
+  font-size: 28px;
+  font-weight: 600;
+}
+.loginBlock a {
+  background-color: burlywood;
+  color: #272118;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 6px 12px;
+  text-transform: all 500ms ease;
+}
+.loginBlock:hover a {
+  background-color: #dba058;
+}
