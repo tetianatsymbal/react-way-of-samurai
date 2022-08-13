@@ -40,12 +40,12 @@ export const profileAPI = {
   },
   getStatus(userId){
     return(
-      axiosInstance.get(`status/` + userId)
+      axiosInstance.get(`profile/status/` + userId)
     );
   },
   updateStatus(status){
     return(
-      axiosInstance.put(`status`, {status: status})
+      axiosInstance.put(`profile/status`, {status: status})
     );
   },
 };

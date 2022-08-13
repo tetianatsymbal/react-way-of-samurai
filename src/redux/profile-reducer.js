@@ -60,7 +60,6 @@ const profileReducer = (state = initialState, action) => {
 export const addPostActionCreator = () => ({type: ADD_POST});
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
 export const setStatus = (status) => ({type: SET_STATUS, status});
-export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
 export const getUserProfileThunk = (userId) => {
   return (dispatch) => {
@@ -73,18 +72,19 @@ export const getUserProfileThunk = (userId) => {
 
 export const getStatusThunk = (userId) => (dispatch) => {
   profileAPI.getStatus(userId)
-    .then(response => {
-      debugger;
-      dispatch(setStatus(response.data))
-    });
+  .then(response => {
+    dispatch(setStatus(response.data))
+  });
 }
-export const updateStatusThunk = (userId) => (dispatch) => {
-  profileAPI.getStatus(userId)
-    .then(response => {
-      debugger;
+export const updateStatusThunk = (status) => (dispatch) => {
+  profileAPI.updateStatus(status)
+  .then(response => {
+    if(response.data.resultCode === 0) {
       dispatch(setStatus(response.data))
-    });
+    }
+  });
 }
 
+export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
 export default profileReducer;
