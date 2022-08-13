@@ -22,10 +22,13 @@ const App = (props) => {
         <Routes>
           <Route
             path="/dialogs/*"
-            element={<DialogsContainer/>} />
+            element={<DialogsContainer />} />
           <Route
-            path="/profile/*"
-            element={<ProfileContainer/>} />
+            path="/profile"
+            element={<ProfileContainer key={1} />} exact/>
+          <Route
+            path="/profile/:userId"
+            element={<ProfileContainer key={2} />} />
           <Route path="/users/*" element={<UsersContainer />} />
           <Route path="/login/*" element={<LoginPage />} />
           <Route path="/news/*" element={<News />} />
