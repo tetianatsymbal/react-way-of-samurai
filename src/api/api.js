@@ -57,5 +57,11 @@ export const authAPI = {
      axiosInstance.get(`auth/me`)
      .then (response => response.data)
     );
+  },
+  doLogin() {
+    return (
+    axiosInstance.post(`auth/login`, {})
+    .then (response => response.data)
+    );
   }
 }

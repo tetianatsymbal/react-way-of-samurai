@@ -2,7 +2,6 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 
 const LoginForm = (props) => {
- debugger;
   return (
    <form onSubmit={props.handleSubmit}>
       <div>
