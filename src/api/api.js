@@ -58,9 +58,15 @@ export const authAPI = {
      .then (response => response.data)
     );
   },
-  doLogin() {
+  login(email, password, rememberMe = false) {
     return (
-    axiosInstance.post(`auth/login`, {})
+    axiosInstance.post(`auth/login`, {email, password, rememberMe})
+    .then (response => response.data)
+    );
+  },
+  logout() {
+    return (
+    axiosInstance.delete(`auth/login`)
     .then (response => response.data)
     );
   }

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
 import logo from "../../assets/logo.jpg";
 
@@ -11,8 +10,9 @@ const Header = (props) => {
         <span className={s.socialName}> FETLOCK </span>
       </div>
       <div className={s.loginBlock}>
-        {props.isAuth ? props.login : <NavLink to={"/login"}>Login</NavLink>}
-        
+      { props.isAuth
+      ? <div> {props.login}  - <button onClick={props.logout}>Log out</button></div>
+      : <a href="/login">Login</a> }
       </div>
     </header>
   );
