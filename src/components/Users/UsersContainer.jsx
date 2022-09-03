@@ -1,7 +1,6 @@
-import * as axios from "axios";
 import React from "react";
 import { connect } from "react-redux";
-import { follow, setCurrentPage, setTotalUsersCount, setUsers, unFollow, toggleFollowingProgress, requestUsers } from "../../redux/users-reducer";
+import { follow, requestUsers, setCurrentPage, setTotalUsersCount, setUsers, toggleFollowingProgress, unFollow } from "../../redux/users-reducer";
 import { getCurrentPage, getFollowingInProgress, getIsFetching, getPageSize, getTotalUsersCount, getUsers } from "../../redux/users-selectors";
 import Preloader from "../common/preloader/Preloader";
 import Users from "./Users";
@@ -9,11 +8,13 @@ import Users from "./Users";
 class UsersContainer extends React.Component {
 
   componentDidMount (){
-    this.props.requestUsers(this.props.currentPage, this.props.pageSize);
+    const {currentPage, pageSize} = this.props;
+    this.props.requestUsers(currentPage, pageSize);
 
   }
   onPageChanged = (pageNumber) => {
-    this.props.requestUsers(pageNumber, this.props.pageSize);
+    const {pageSize} = this.props;
+    this.props.requestUsers(pageNumber, pageSize);
 
   }
   render() { 
