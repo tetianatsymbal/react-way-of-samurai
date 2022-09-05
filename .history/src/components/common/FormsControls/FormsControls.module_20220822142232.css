@@ -1,0 +1,40 @@
+.formControl{
+margin-bottom: 15px;
+}
+
+.formControl.error input,
+.formControl.error textarea {
+   border: solid indianred 2px;
+   margin-top: 10px;
+}
+.formControl.error span {
+   color: indianred;
+}
+.loginBlock{
+   margin: 0 auto;
+   text-align: center;
+   color: burlywood;
+}
+.rememberMe{
+   display: flex;
+   justify-content: center;
+}
+.loginForm {
+   padding: 20px;
+   width: 35%;
+   text-align: center;
+   margin: 0 auto;
+   background-color: rgba(229, 241, 252, 0.3);
+   border: burlywood 2px solid;
+   border-radius: 10px;
+}
+.formSummaryError{
+   width: 80%;
+   border: 1px solid tomato;
+   background-color: cornsilk;
+   color: indianred;
+   font-size: 16px;
+   text-align: center;
+   padding: 3px;
+   margin: 20px auto;
+}
